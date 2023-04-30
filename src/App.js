@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
 
+// import Info from "./Info";
+
+import Board from "./componetns/Board";
+
+  
+import { useState } from 'react';
+import Game from "./componetns/Game";
+  
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    // const [reset, setReset] = useState(false);
+  
+    // const [winner, setWinner] = useState('');
+  
+   
+    // const resetBoard = () => {
+    //     setReset(true);
+    // }
+  
+    return (
+        <div className="App">
+{/*            
+            <div className={`winner ${winner !== '' ? '' : 'shrink'}`}>
+             
+                <div className='winner-text'>{winner}</div>
+               
+                <button onClick={() => resetBoard()}>
+                    Reset Board
+                </button>
+            </div> */}
+           
+            {/* <Board /> */}
+            <Game/>
+            
+            {/* <Info /> */}
+        </div>
+    );
 }
-
+  
 export default App;
+
+// reset={reset} setReset={setReset} winner={winner}   setWinner={setWinner} 
